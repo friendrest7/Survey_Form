@@ -1,0 +1,121 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Universe Survey Form</title>
+  </head>
+  <body>
+  <h1 id="title">Universe survey form</h1>
+  <p id="description">hello thank you for your support your replies help us determine your opinion about universe.</p>
+  <form id="survey-form">
+   <label for="name" id="name-label">
+     Name: <input id="name" type="text" placeholder="please enter your full name" name="name" required /></label>
+   <label for="email" id="email-label">
+     E-mail:<input id="email" type="email" name="email" placeholder="please enter your email"  required/></label>
+   <label for="number" id="number-label">
+     Age:<input id="number" type="number" placeholder="please enter your age" name="age" min="1" max="125" required/></label>
+     <label for="dropdown">How do you think of universe ?</label>
+    <select id="dropdown" name="dropdown">
+      <option value="" name="universe-replies">(please select one answer)</option>
+      <option value="1" name="universe-replies">universe is infinity</option>
+      <option value="2" name="universe-replies">universe contains all of the planet</option>
+      <option value="3">universe contains all of the galaxies</option>
+      <option value="4">universe contains sun,planets and stars</option>
+      <option value="5">universe contains every moving and non-moving bodies in it and it is infinity</option>
+       </select>
+       <fieldset>
+ <p>Does the universe extend itself?</p>
+
+<input type="radio" id="yes" name="universe" value="yes" required>
+<label for="yes">Yes</label>
+
+<input type="radio" id="no" name="universe" value="no">
+<label for="no">No</label>
+       </fieldset>
+      <fieldset>
+      <legend>Can you select which type of galaxy in universe you like ??</legend><select>
+      <label><input type="checkbox" value="Milky way Galaxy"/>Milky way Galaxy</label>
+      <label><input type="checkbox" value="Andromeda Galaxy"/>Andromeda Galaxy</label>
+      <label><input type="checkbox" value="Triangulum Galaxy"/>Triangulum Galaxy</label>
+      <label><input type="checkbox" value="Large Magellanic Cloud Galaxy"/>Large Magellanic Cloud Galaxy</label>
+      <label><input type="checkbox" value="Small Magellanic Cloud Galaxy"/>Small Magellanic Cloud Galaxy</label>
+      <label><input type="checkbox" value="Messier Galaxy"/>Messier Galaxy</label>
+      </select>
+      </fieldset>
+   <textarea id="comment" name="comment" rows="4" cols="27" placeholder="the universe is fantastic and classic..."></textarea>
+    <input type="submit" id="submit" value="Submit"/>
+    </form>
+  </body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #0c2f28;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 100vw;
+  max-width: 1300px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+ 
+}
+
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+  font-size:1.2rem;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2.5em;
+}
+
+input, textarea {
+  background-color: #ffffff;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #006400;
+  border-color: green;
+  min-width: 300px;
+}
+
+** end of styles.css **
+
